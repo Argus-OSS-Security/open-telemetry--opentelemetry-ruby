@@ -1,19 +1,20 @@
 name: Force release
 
-on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: Component to release
-        required: true
-      version:
-        description: Version to release
-        required: true
-      flags:
-        description: Extra flags to pass to the release script
-        required: false
-        default: ""
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       name:
+#         description: Component to release
+#         required: true
+#       version:
+#         description: Version to release
+#         required: true
+#       flags:
+#         description: Extra flags to pass to the release script
+#         required: false
+#         default: ""
+# 
 permissions:
   contents: read
 

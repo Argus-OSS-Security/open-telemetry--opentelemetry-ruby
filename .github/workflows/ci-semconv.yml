@@ -1,17 +1,18 @@
 name: Semantic Conventions ci check
 
-on:
-  pull_request:
-    types: [opened, synchronize, edited]
-    paths:
-      - '.github/workflows/ci-semconv.yml'
-      - 'semantic_conventions/compose.yml'
-      - 'semantic_conventions/Rakefile'
-      - 'semantic_conventions/lib/**'
-      - 'semantic_conventions/templates/**'
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [opened, synchronize, edited]
+#     paths:
+#       - '.github/workflows/ci-semconv.yml'
+#       - 'semantic_conventions/compose.yml'
+#       - 'semantic_conventions/Rakefile'
+#       - 'semantic_conventions/lib/**'
+#       - 'semantic_conventions/templates/**'
+#     branches:
+#       - main
+# 
 permissions:
   contents: read
 

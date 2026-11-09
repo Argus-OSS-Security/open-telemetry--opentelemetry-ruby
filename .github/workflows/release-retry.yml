@@ -1,16 +1,17 @@
 name: Retry release
 
-on:
-  workflow_dispatch:
-    inputs:
-      release_pr:
-        description: Release PR number
-        required: true
-      flags:
-        description: Extra flags to pass to the release script
-        required: false
-        default: ""
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       release_pr:
+#         description: Release PR number
+#         required: true
+#       flags:
+#         description: Extra flags to pass to the release script
+#         required: false
+#         default: ""
+# 
 permissions:
   contents: read
 

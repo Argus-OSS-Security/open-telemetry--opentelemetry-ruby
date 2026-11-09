@@ -1,10 +1,11 @@
 name: "[release hook] Update open releases"
 
-on:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+# 
 permissions:
   contents: read
 

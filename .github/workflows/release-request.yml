@@ -1,18 +1,19 @@
 name: Open release request
 
-on:
-  workflow_dispatch:
-    inputs:
-      names:
-        description: Components to release (leave blank to release all components)
-        required: false
-        default: ""
-  push:
-    branches:
-      - main
-    paths:
-      - "semantic_conventions/semconv.yaml"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       names:
+#         description: Components to release (leave blank to release all components)
+#         required: false
+#         default: ""
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - "semantic_conventions/semconv.yaml"
+# 
 permissions:
   contents: read
 

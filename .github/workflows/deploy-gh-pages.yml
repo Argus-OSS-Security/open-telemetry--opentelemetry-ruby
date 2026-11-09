@@ -1,13 +1,14 @@
 name: Deploy Github Pages
 
-on:
-  push:
-    branches:
-      - "main"
-    paths:
-      - "docs/**"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - "main"
+#     paths:
+#       - "docs/**"
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
   pages: write

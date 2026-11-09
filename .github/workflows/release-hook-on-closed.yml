@@ -1,9 +1,10 @@
 name: "[release hook] Process release"
 
-on:
-  pull_request:
-    types: [closed]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [closed]
+# 
 permissions:
   contents: read
 

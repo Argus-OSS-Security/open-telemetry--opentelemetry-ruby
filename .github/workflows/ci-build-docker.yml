@@ -1,20 +1,21 @@
 name: Build / Docker
 
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths: &path_filters
-      - ".docker/**"
-      - "docker-compose.yml"
-      - ".github/workflows/ci-build-docker.yml"
-  pull_request:
-    branches:
-      - main
-    paths: *path_filters
-  merge_group:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+#     paths: &path_filters
+#       - ".docker/**"
+#       - "docker-compose.yml"
+#       - ".github/workflows/ci-build-docker.yml"
+#   pull_request:
+#     branches:
+#       - main
+#     paths: *path_filters
+#   merge_group:
+# 
 permissions:
   contents: read
 

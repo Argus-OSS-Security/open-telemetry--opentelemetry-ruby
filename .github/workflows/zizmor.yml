@@ -1,13 +1,14 @@
 name: Zizmor
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-  schedule:
-    - cron: '27 15 * * 2' # weekly at 15:27 UTC on Tuesday
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#   schedule:
+#     - cron: '27 15 * * 2' # weekly at 15:27 UTC on Tuesday
+#   workflow_dispatch:
+# 
 permissions: {}
 
 jobs:
